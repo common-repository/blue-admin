@@ -1,0 +1,293 @@
+.clear {
+    clear: both;
+    float: none;
+}
+
+.ba-info p {
+    font-size: 15px;
+}
+
+.ba_boxes {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    display: -ms-flexbox;
+    -ms-flex-wrap: wrap;
+    position: relative;
+}
+
+.ba_box {
+    width: 23.5%;
+    margin-right: 1.8%;
+    min-height: 160px;
+    overflow: inherit !important;
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.ba_box h3 {
+    padding: 8px;
+    font-size: 13px;
+    cursor: default !important;
+    margin: 0;
+    position: relative;
+}
+
+.ba_box.disable {
+    background: none;
+    position: relative;
+    border: 1px solid #dedede;
+    -webkit-box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, .1);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 5px dashed #d5d2ca;
+    text-align: center;
+    margin-right: 0px;
+}
+
+.ba_box.disable h3 {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    left: 50%;
+    font-size: 30px;
+    margin-left: -100px;
+}
+
+.ba_box .button-primary {
+    margin-bottom: 5px !important;
+}
+
+.ba_box .button-primary.disable,
+.reset-box .button-primary.disable {
+    background: #C11215 !important;
+}
+
+.ba_box .button-primary.disable:hover {
+    background: #E44245 !important;
+}
+
+.ba-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.ba-footer p {
+    margin: 10px
+}
+
+.ba-footer .logo a {
+    margin: 0 auto;
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.ba-info img {
+    margin-right: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #C7C7C7;
+}
+
+.reset-box {
+    border: 1px dashed #d5d2ca;
+    padding: 20px;
+    background: #eee;
+    text-align: right;
+    margin-bottom: 50px;
+}
+
+.reset-box .button-primary {
+    font-size: 15px;
+    padding: 5px 20px !important;
+    height: auto !important;
+}
+
+.ba-lp-d fieldset {
+    background: #F9F9F9;
+    padding: 20px;
+    margin: 25px 0;
+    border: 1px solid #ddd;
+}
+
+.ba-lp-d fieldset legend {
+    background: #ddd;
+    padding: 8px 15px;
+    border-radius: 0px !important;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+}
+
+.ba-lp-d fieldset p {
+    font-size: 14px;
+}
+
+.palettes .palette {
+    width: 10%;
+    background: #eee;
+    float: left;
+    position: relative;
+    margin: 10px 11px;
+    overflow: hidden;
+}
+
+.palettes .palette.wide {
+    width: 100%;
+    margin: 0;
+}
+
+.palettes .palette table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    position: relative;
+    z-index: 1;
+}
+
+.palettes .palette table td {
+    height: 80px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.palettes .palette.wide,
+.palettes .palette table td {
+    height: 100px;
+}
+
+.palettes .palette label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99;
+    display: block;
+    color: #fff;
+    padding: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pinter;
+    letter-spacing: 0.6px;
+}
+
+.palettes .palette.wide label {
+    padding: 20px;
+    cursor: default;
+}
+
+.palettes .palette label span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.palettes .palette.wide label span {
+    font-size: 20px;
+}
+
+.palettes .palette label a {
+    color: #fff;
+    font-size: 12px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    opacity: 0.7;
+    z-index: 999;
+}
+
+.palettes .palette label a:hover {
+    opacity: 1;
+}
+
+.palettes .palette label:after {
+    font-family: dashicons;
+    content: "\f147";
+    font-size: 25px;
+    color: #fff;
+    bottom: 5px;
+    position: absolute;
+    z-index: 999;
+    right: 10px;
+    opacity: 0;
+}
+
+.palettes .palette label,
+.palettes .palette label:after {
+    -webkit-transition: 0.25s all ease !important;
+    -moz-transition: 0.25s all ease !important;
+    -ms-transition: 0.25s all ease !important;
+    -o-transition: 0.25s all ease !important;
+    transition: 0.25s all ease !important;
+}
+
+.palettes .palette input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+
+.palettes .palette input[type="radio"]:checked+label {
+    font-size: 14px;
+}
+
+.palettes .palette input[type="radio"]:checked+label:after {
+    opacity: 1;
+}
+
+.loaded-palettes {
+    max-height: 900px;
+    overflow: auto;
+    ;
+}
+
+@media only screen and (max-width: 1440px) {
+    .palettes .palette {
+        width: 14.8%;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .palettes .palette {
+        width: 14.6%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .palettes .palette {
+        width: 17%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .palettes .palette {
+        width: 21.5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .palettes .palette {
+        width: 20.5%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .palettes .palette {
+        width: 30%;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .palettes .palette {
+        width: 46%;
+        margin: 5px;
+    }
+}
